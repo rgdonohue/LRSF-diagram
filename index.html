@@ -31,33 +31,68 @@
             left: calc(50% - 430px);
             width: 800px;
             height: 80vh;
-            background: rgb(32, 33, 33);
-            opacity: 90%;
-            padding: 20px 30px;
             color: white;
+            background: #4e81bd;
             display: none;
             overflow-y: scroll;
-            columns: 3;
+        }
+
+        .modal h2 {
+            text-align: center;
+            color: white;
+            font-weight: 200;
+            ;
+        }
+
+        .modal ul {
+            padding-left: 0;
+        }
+
+        .modal li {
+            margin-bottom: 12px;
         }
 
         .modal .close {
             font-size: 45px;
-            font-weight: 900;
+            font-weight: 100;
             color: white;
             cursor: pointer;
             float: right;
+            margin-right: 40px;
+            margin-left: -40px;
+            border: 1px white;
         }
 
         .modal a,
         .modal:visited {
-            color: rgb(15, 124, 124)
+            color: white;
+        }
+
+        .modal-columns-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .modal-equitable {
+            background: #6d7fa3;
+            padding: 20px 30px;
+        }
+
+        .modal-securing {
+            background: #807279;
+            padding: 20px 30px;
+        }
+
+        .modal-maintaining {
+            background: #817c75;
+            padding: 20px 30px;
         }
     </style>
 </head>
 
 <body>
     <div id="wrapper">
-        <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1118.36 1157.89">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1118.36 1157.89">
             <defs>
                 <style>
                     .cls-1 {
@@ -611,102 +646,737 @@
         <div class='modal' id="modal-retail">
             <span class="close">&times;</span>
             <h2>Retail, Restaurant, and Packaged Goods</h2>
-            <h3>Equitable Response and Recovery</h3>
-            <h4>Impacts and Response in LRFS:</h4>
-            <ul>
-                <li>Small, independent operators, local restaurants, food entrepreneurs, and independent grocers are
-                    uniquely impacted by disruptions like COVID-19 and climate crises because of limited access to cash
-                    reserves to weather the storm.</li>
-                <li></li>Owner operators and employees of these businesses are disproportionately impacted by the
-                front-line risk of continuing essential food access services.
-                <li>In the case of incubator kitchens, there are significant populations of new-immigrant and
-                    historically marginalized entrepreneurs.</li>
-            </ul>
-            <h4>Resilience in Action:</h4>
-            <ul>
-                <li>The <a target='_blank' href='https://makefoodyourbusiness.org/nourish-our-neighbors/'>Nourish Our
-                        Neighbors</a> program run by Hope & Main Food Incubator in Rhode Island was launched in
-                    response to increased levels of food insecurity brought on by the COVID-19 pandemic. Through a buy
-                    one/give one model, the program provided meals to food insecure families and vulnerable individuals.
-                </li>
-            </ul>
-            <h3>Securing Supply Chains</h3>
-            <h4>Impacts and Response in LRFS:</h4>
-            <ul>
-                <li>With critical access to power (Esp. for cold storage), gas, and transportation of goods, locally
-                    embedded operations can serve as points of emergency service provision and maintain continuity of
-                    markets. This, in turn, has significant consequences for the safety and quality of food and
-                    community food access.
-                </li>
-                <li>Without access to affordable and scale-appropriate online sales platforms, independent food
-                    retailers
-                    and value-added producers struggle to pivot to online and alternative sales platforms.</li>
-            </ul>
-            <h4>Resilience in Action:</h4>
-            <ul>
-                <li><a target='_blank'
-                        href='https://lfscovid.localfoodeconomics.com/resources/community-food-co-ops-are-thriving-during-the-pandemic/'>Community
-                        Food Coops are Thriving During the Pandemic</a>, National Coop Grocers: Independent grocers
-                    and coops
-                    that had established relationships with producers and suppliers were better able to keep shelves
-                    full in
-                    times of supply chain shortage.</li>
-                <li>New Orleans' <a target='_blank' href='https://www.feedthesecondline.org/programs/getlitstaylit'>Get
-                        Lit Stay Lit initiative</a> is one example of how using a local and regional food
-                    system-level
-                    response, restaurants coordinated with response efforts in their communities to use existing cold
-                    storage
-                    infrastructure during climate-related food systems disruptions.</li>
-            </ul>
-            <h3>Maintaining Markets</h3>
-            <h4>Impacts and Response in LRFS:</h4>
-            <ul>
-                <li>When the COVID-19 pandemic hit, restaurants faced <a target='_blank'
-                        href='https://www.jamesbeard.org/blog/the-coronavirus-impact-on-restaurants'>dire financial and
-                        operational circumstances</a> as businesses closed because of lockdowns.</li>
-                <li>Restaurant closures significantly disrupted the relationships between local producers and
-                    restaurants.
-                    Overnight, farmers lost valuable markets as restaurants struggled to maintain operations.</li>
-                <li>Value-added food entrepreneurs who are commonly reliant on direct-to-consumer markets or sales to
-                    independent grocers and restaurants are forced to pivot to entirely new sales models in order to
-                    reach
-                    consumers amid disruption.</li>
-            </ul>
-            <h4>Resilience in Action:</h4>
-            <ul>
-                <li><a target='_blank'
-                        href='https://lfscovid.localfoodeconomics.com/wp-content/uploads/2021/02/LEE-Initiative-1.pdf'>
-                        Restaurant Reboot Relief Program Innovation Brief</a>: The Lee Initiative provided stipends to
-                    local farms in 20 regions across the U.S. to ensure continued food production for restaurants and to
-                    maintain
-                    producer-restaurant relationships. This allowed restaurants to lower ingredient costs while still
-                    acquiring local products, providing high-quality food to patrons, retaining restaurant workers, and
-                    maintaining markets for and relationships with farmers.</li>
-            </ul>
+            <div class="modal-columns-container">
+                <div class="modal-equitable">
+                    <h3>Equitable Response and Recovery</h3>
+                    <p>Impacts and Response in LRFS:</p>
+                    <ul>
+                        <li>Small, independent operators, local restaurants, food entrepreneurs, and independent grocers
+                            are
+                            uniquely impacted by disruptions like COVID-19 and climate crises because of limited access
+                            to
+                            cash
+                            reserves to weather the storm.</li>
+                        <li>Owner operators and employees of these businesses are disproportionately impacted by the
+                            front-line
+                            risk of continuing essential food access services.</li>
+                    </ul>
+                    <p>Resilience in Action:</p>
+                    <ul>
+                        <li>The <a href="https://makefoodyourbusiness.org/nourish-our-neighbors/">Nourish Our
+                                Neighbors</a>
+                            program run by Hope &amp; Main Food Incubator in Rhode Island was launched in response to
+                            increased
+                            levels of food insecurity brought on by the COVID-19 pandemic. Through a buy one/give one
+                            model,
+                            the
+                            program provided meals to food insecure families and vulnerable individuals.</li>
+                        <li>Many new-immigrant and historically marginalized entrepreneurs are utilizing shared kitchens
+                            to
+                            start food businesses. The <a href="https://www.thefoodcorridor.com/thenick/">Network for
+                                Incubator
+                                and Commissary Kitchens</a> helps food entrepreneurs exchange best practices, solve
+                            problems,
+                            and connect with other shared-use kitchen users.</li>
+                    </ul>
+                    <h3>&nbsp;</h3>
+                </div>
+                <div class="modal-securing">
+                    <h3>Securing Supply Chains</h3>
+                    <p>Impacts and Response in LRFS:</p>
+                    <ul>
+                        <li>With critical access to power (especially for cold storage), gas, and transportation of
+                            goods,
+                            locally embedded operations can serve as points of emergency service provision and maintain
+                            continuity of markets. This, in turn, has significant consequences for the safety and
+                            quality of
+                            food and community food access.</li>
+                        <li>Without access to affordable and scale-appropriate online sales platforms, independent food
+                            retailers and value-added producers struggle to pivot to online and alternative sales
+                            platforms.
+                        </li>
+                    </ul>
+                    <p>Resilience in Action:</p>
+                    <ul>
+                        <li><a
+                                href="https://lfscovid.localfoodeconomics.com/resources/community-food-co-ops-are-thriving-during-the-pandemic/">Community
+                                Food Coops are Thriving During the Pandemic</a>, National Coop Grocers: Independent
+                            grocers
+                            and
+                            coops that had established relationships with producers and suppliers were better able to
+                            keep
+                            shelves full in times of supply chain shortages.</li>
+                        <li>New Orleans' <a href="https://www.feedthesecondline.org/programs/getlitstaylit">Get Lit Stay
+                                Lit
+                                initiative</a> is one example of how by using a local and regional food system-level
+                            response,
+                            restaurants coordinated with response efforts in their communities to use existing cold
+                            storage
+                            infrastructure during climate-related food systems disruptions.</li>
+                    </ul>
+                    <h3>&nbsp;</h3>
+                </div>
+                <div class="modal-maintaining">
+                    <h3>Maintaining Markets </h3>
+                    <p>Impacts and Response in LRFS:</p>
+                    <ul>
+                        <li>When the COVID-19 pandemic hit, restaurants faced <a
+                                href="https://www.jamesbeard.org/blog/the-coronavirus-impact-on-restaurants">dire
+                                financial
+                                and
+                                operational circumstances</a> as businesses closed because of lockdowns.</li>
+                        <li>Restaurant closures significantly disrupted the relationships between local producers and
+                            restaurants. Overnight, farmers lost valuable markets as restaurants struggled to maintain
+                            operations.</li>
+                        <li>Value-added food entrepreneurs who are commonly reliant on direct-to-consumer markets or
+                            sales
+                            to
+                            independent grocers and restaurants are forced to pivot to entirely new sales models to
+                            reach
+                            consumers amid disruption.</li>
+                    </ul>
+                    <p>Resilience in Action:</p>
+                    <ul>
+                        <li><a
+                                href="https://lfscovid.localfoodeconomics.com/wp-content/uploads/2021/02/LEE-Initiative-1.pdf"><em>Restaurant
+                                    Reboot Relief Program Innovation Brief </em></a>:
+                            The Lee Initiative provided stipends to
+                            local
+                            farms in 20 regions across the U.S. to ensure continued food production for restaurants and
+                            to
+                            maintain
+                            producer-restaurant relationships. This allowed restaurants to reduce ingredient costs while
+                            still
+                            acquiring local products, providing high-quality food to patrons, retaining restaurant
+                            workers,
+                            and
+                            maintaining markets for and relationships with farmers.
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class='modal' id="modal-institutions">
             <span class="close">&times;</span>
-            <h2>Institutions</h2>
+            <h2>Institutions and Wholesale</h2>
+            <div class="modal-columns-container">
+                <div class="modal-equitable">
+                    <h3>Equitable Response and Recovery</h3>
+                    <p>Impacts and Response in LRFS:</p>
+                    <ul>
+                        <li>LRFS wholesale producers can be left out of conversations on re-configuring supply chains
+                            and
+                            institutional dining, resulting in approaches that don&rsquo;t align with producers&rsquo;
+                            capacity.
+                        </li>
+                        <li>Abrupt shutdowns of schools disrupt classroom learning and limit access to school meals, a
+                            vital
+                            food resource for families and source of nutrition for many children.</li>
+                        <li>A sustained and intentional commitment to equity and inclusion in response and recovery
+                            efforts can:
+                            <ul>
+                                <li>direct resources to support continuation of essential markets</li>
+                                <li>maintain and advance nutrition security</li>
+                                <li>lead to the long-term growth of market opportunities.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Resilience in Action:</p>
+                    <ul>
+                        <li><a href="https://lfscovid.localfoodeconomics.com/wp-content/uploads/2021/02/Wallace-1.pdf"><em>From
+                                    Food Hubs to CSAs</em>:</a> Food hubs and institutional dining operations leverage
+                            established and equitably developed relationships and networks to ensure they are uniquely
+                            positioned to aggregate and connect local food producers to unmet needs in hunger relief
+                            programming.</li>
+                        <li><a href="https://www.freshapproach.org/farm-fresh-food-network/">Farm Fresh Food
+                                Network</a>,
+                            developed by FreshApproach, provides long-term opportunities and market channels for small
+                            and
+                            beginning farmers, BIPOC and woman-owned farms within the hunger relief ecosystem of the San
+                            Francisco Bay area. Using a hub-and-spoke model, they delivered local farm boxes under the
+                            Farmers
+                            to Families Food Box Program.</li>
+                    </ul>
+                </div>
+                <div class="modal-securing">
+                    <h3>Securing Supply Chains </h3>
+                    <p>Impacts and Response in LRFS:</p>
+                    <ul>
+                        <li>Institutional and wholesale markets experience both supply chain shortages and dramatic
+                            financial
+                            loss in times of crisis.</li>
+                        <li>Consumers reliant on cafeterias, restaurants, and other wholesale outlets are significantly
+                            impacted
+                            by reduced food access points when these outlets close.</li>
+                        <li>Food producers who have invested significant time and money into growing mid-tier markets
+                            may be
+                            left with abundant product and no clear way to get it into the marketplace because of
+                            inflexibility
+                            and lack of diversity within consolidated food supply chains.</li>
+                    </ul>
+                    <p>Resilience in Action:</p>
+                    <ul>
+                        <li><a
+                                href="https://lfscovid.localfoodeconomics.com/wp-content/uploads/2021/05/Access-Points-IB-Updated1.pdf"><em>Access
+                                    Point</em> Innovation Brief</a>: Schools can become central distribution points for
+                            various
+                            types of food share programs ranging from Community Supported Agriculture (CSA) shares,
+                            local food
+                            boxes, or grocery bags by partnering with philanthropic organizations, city governments, and
+                            non-profit community organizations.</li>
+                        <li><a href="https://lfscovid.localfoodeconomics.com/wp-content/uploads/2021/02/Wallace-1.pdf"><em>From
+                                    Food Hubs to CSAs</em> Innovation Brief</a>: Because of their investments in
+                            mid-sized
+                            infrastructure and value chains, food hubs and wholesale value chains provide essential
+                            built and
+                            soft infrastructure for farmers and communities in times of disruption. This infrastructure
+                            helps to
+                            create and grow market channels for farmers and establishes avenues to get food to people in
+                            need.
+                        </li>
+                        <li><a
+                                href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;ved=2ahUKEwiekfKolNH7AhWVMlkFHWUYAbIQFnoECDUQAQ&amp;url=https%3A%2F%2Fwww.foodsystemsjournal.org%2Findex.php%2Ffsj%2Farticle%2Fdownload%2F937%2F910%2F1867&amp;usg=AOvVaw3P2YVWq3Fl_Ya823F7XsR5">Food
+                                Hub Infrastructure in Hawaii</a>: On islands and in other geographically remote
+                            communities,
+                            mid-sized value chain infrastructure can adapt to the unique geography and context of the
+                            communities.</li>
+                    </ul>
+                </div>
+                <div class="modal-securing">
+                    <h3>Maintaining Markets </h3>
+                    <p>Impacts and Response in LRFS:</p>
+                    <ul>
+                        <li>During public health crises, dining programs at health care facilities are impacted by
+                            reduced
+                            visitation combined with unexpected PPE costs, drastic reduction in outpatient procedures,
+                            slashed
+                            budgets, and overburdened staff. This can lead to temporary or permanent discontinuation of
+                            local
+                            procurement initiatives.</li>
+                        <li>When business as usual is no longer an option, LRFS wholesale markets find ways to shift
+                            operations
+                            from institutions and restaurants to direct service models, often in a way focused on hunger
+                            relief.
+                        </li>
+                        <li>The strength of many food hubs&rsquo; community partnerships allows them to transition
+                            quickly when
+                            other parts of the food supply chain slow or shut down.</li>
+                    </ul>
+                    <p>Resilience in Action:</p>
+                    <ul>
+                        <li><a
+                                href="https://lfscovid.localfoodeconomics.com/wp-content/uploads/2021/02/FINE-Innovation-Brief.pdf"><em>Healthcare
+                                    CSAs and Local Retail Outlets </em>Innovation Brief</a>: Healthcare facilities
+                            implemented
+                            and expanded local food initiatives during the pandemic to effectively feed and care for
+                            constituents while also investing in the local food economy. By leveraging existing
+                            partnerships and
+                            value chains, healthcare organizations moved quickly to serve their stakeholders through
+                            onsite
+                            retail (e.g., grocery) locations and expanded community supported agriculture (CSA) or
+                            produce
+                            subscription programs.</li>
+                        <li>The Good Acre's <a href="https://thegoodacre.org/leaff/">Local Emergency Assistance Farmer
+                                Fund</a>
+                            is an example of how food hubs co-created programs specifically and explicitly designed to
+                            create
+                            sustainable market channels with/by/for BIPOC producers. Using elements of a Community
+                            Supported
+                            Agriculture model, local food hubs collaborated with partners to match the needs of
+                            producers and
+                            consumers amid the pandemic-induced market shift. Pre-established partnerships helped hubs
+                            understand and navigate new supply and demand landscapes when their traditional wholesale
+                            market
+                            models evaporated.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class='modal' id="modal-government">
             <span class="close">&times;</span>
-            <h2>goverment</h2>
+            <h2>Government and Policy</h2>
+            <div class="modal-columns-container">
+                <div class="modal-equitable">
+                    <h3>Equitable Response and Recovery</h3>
+                    <p>Impacts and Response in LRFS:</p>
+                    <ul>
+                        <li>Disruptions like COVID-19 and climate emergencies result in extreme and diverse
+                            LRFS
+                            impacts
+                            across
+                            stakeholder groups, including overwhelming food banks with the heightened need
+                            for
+                            their
+                            services,
+                            leaving vulnerable populations without reliable transportation to access food,
+                            and
+                            farmers
+                            being
+                            left with product in the field because they lack appropriate market channels.
+                        </li>
+                        <li>Agencies at all levels of government (Municipal, State, Tribal, Federal) are
+                            called
+                            on to
+                            support
+                            and coordinate local efforts while also coordinating with federal emergency
+                            response
+                            agencies and
+                            initiatives to shift funding and priorities to meet the needs of those most
+                            impacted.
+                            Agencies can
+                            shift and prioritize funding to serve communities and individuals most impacted
+                            by
+                            the
+                            disruption.
+                        </li>
+                    </ul>
+                    <p>Resilience in Action:</p>
+                    <ul>
+                        <li>Passed in the 2021 state legislative session, <a
+                                href="https://lfscovid.localfoodeconomics.com/wp-content/uploads/2023/01/CT-Grown-for-CT-Kids.pdf">CT
+                                Grown for CT Kids</a> works to remedy the gap between school lunch programs
+                            and
+                            nearby
+                            farms.
+                            This statewide grant program, run through the Connecticut Department of
+                            Agriculture,
+                            funded
+                            efforts
+                            that connect students to local agriculture through food education, local
+                            sourcing,
+                            and
+                            community
+                            partnerships. Read more about CT Grown for CT Kids here.</li>
+                    </ul>
+                </div>
+                <div class="modal-securing">
+                    <h3>Securing Supply Chains </h3>
+                    <p>Impacts and Response in LRFS:</p>
+                    <ul>
+                        <li>Impacts to LRFS infrastructure and supply chains can come from damage to on-farm
+                            infrastructure,
+                            loss of power supply to essential cold-chain equipment, or disruption to social
+                            infrastructure like
+                            community aid networks.</li>
+                        <li>Farmers and food businesses have a difficult time accessing and navigating
+                            federal
+                            relief
+                            funds and
+                            cost share programs as dissemination of information about how to access
+                            different
+                            sources of
+                            funding
+                            for damaged and/or destroyed on-farm and consumer-focused infrastructure like
+                            fences, barns,
+                            and
+                            farm stands is lacking.</li>
+                    </ul>
+                    <p>Resilience in Action:</p>
+                    <ul>
+                        <li>The <a href="https://www.ams.usda.gov/services/grants/prs">Pandemic Response and
+                                Safety
+                                (PRS) Grant
+                                Program</a> provided approximately $650 million in grants to food
+                            processors,
+                            distributors,
+                            farmers markets, and producers to respond to the coronavirus, including worker
+                            protection
+                            against
+                            COVID-19.</li>
+                    </ul>
+                </div>
+                <div class="modal-maintaining">
+                    <h3>Maintaining Markets </h3>
+                    <p>Impacts and Response in LRFS:</p>
+                    <ul>
+                        <li>Policy and regulation determine what types of operations continue, what
+                            activities
+                            are shut
+                            down,
+                            and guide flows of resources through impacted communities. With
+                            community-informed
+                            approaches,
+                            government-lead response efforts can integrate and attend to the unique needs of
+                            LRFS farm
+                            and food
+                            enterprises, thereby providing critical market opportunities for local
+                            producers,
+                            food
+                            access to
+                            vulnerable communities, and new infrastructure pathways.</li>
+                        <li>Investments to bolster and strengthen market pathways may ensure more robust and
+                            diverse
+                            market
+                            opportunities that can be sustained following crises.</li>
+                    </ul>
+                    <p>Resilience in Action:</p>
+                    <ul>
+                        <li>In Iowa, the <a
+                                href="https://lfscovid.localfoodeconomics.com/wp-content/uploads/2023/01/IowaFarmtoSchool.pdf">Local
+                                Produce and Protein Program</a> was instrumental in strengthening farm to
+                            school
+                            initiatives.
+                            Funded by CARES Act funding, this program incentivized school activities across
+                            the
+                            supply
+                            chain to
+                            create local food connections and teach kids about their food. The program's
+                            core
+                            goals were
+                            to (1)
+                            connect k-12 schools with local producers; (2) provide grant funding to help
+                            schools
+                            purchase from
+                            those local suppliers; and (3) provide grant funding for producers to purchase
+                            the
+                            supplies
+                            needed
+                            to produce and distribute in the school setting.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class='modal' id="modal-non-commodity">
             <span class="close">&times;</span>
-            <h2>non-commodity</h2>
+            <h2>Non-Commodity Goods</h2>
+            <div class="modal-columns-container">
+                <div class="modal-equitable">
+                    <h3>Equitable Response and Recovery</h3>
+                    <p>Impacts and Response in LRFS:</p>
+                    <ul>
+                        <li>Wholesale accounts with restaurants and institutions are often major
+                            portions of sales for
+                            artisan
+                            bakeries and specialty meat producers. Disruptions in restaurants and
+                            institutions in turn
+                            negatively impact market outlets for the non-commodity goods sector.
+                        </li>
+                        <li>Limited infrastructure for retail packaging and underdeveloped retail
+                            distribution of
+                            grain-based
+                            products and meats can lead to significant bottlenecks and consumer
+                            shortages.</li>
+                    </ul>
+                    <p>Resilience in Action:</p>
+                    <ul>
+                        <li><a
+                                href="https://lfscovid.localfoodeconomics.com/wp-content/uploads/2020/12/BreadLab-Neighbor-Loaves-Final.pdf"><em>Neighbor
+                                    Loaves </em>Innovation Brief</a>: The Artisan Grain
+                            Collaborative, a
+                            collective of
+                            Mid-Western bakers, chefs, millers, and farmers, saw an opportunity to
+                            support those
+                            struggling with
+                            the loss of wholesale accounts while helping community feeding
+                            organizations
+                            meet increased
+                            demand.
+                            Through Neighbor Loaves, bakeries distributed bread to community feeding
+                            organizations while
+                            also
+                            generating a key source of revenue for bakeries hit by COVID-19 market
+                            disruptions while
+                            building
+                            markets for local grains.</li>
+                    </ul>
+                </div>
+                <div class="securing">
+                    <h3>Securing Supply Chains </h3>
+                    <p>Impacts and Response in LRFS:</p>
+                    <ul>
+                        <li>Disruptions to consolidated and vertically integrated meat processing
+                            supply
+                            chains result
+                            in an
+                            overwhelming demand for products and services from mid-tier and
+                            small-scale
+                            livestock
+                            processing
+                            systems. This in turn causes unprecedented delays in service.</li>
+                    </ul>
+                    <p>Resilience in Action:</p>
+                    <ul>
+                        <li><a
+                                href="https://lfscovid.localfoodeconomics.com/resources/state-investments-and-innovations-in-meat-processing/">State
+                                Investments and Innovations in Meat Processing</a>: Increasing small
+                            and
+                            mid-tier
+                            processing and
+                            distribution capacity via new facilities, equipment, and training staff
+                            requires long term
+                            strategy
+                            and investment. The development of local and regional markets for
+                            non-commodity and niche
+                            products
+                            requires an engaged consumer base and regional value chains to sustain
+                            demand during and
+                            beyond
+                            times of disruption.</li>
+                    </ul>
+                </div>
+                <div class="maintaining">
+                    <h3>Maintaining Markets </h3>
+                    <p>Impacts and Response in LRFS:</p>
+                    <ul>
+                        <li>Abrupt pivots from wholesale to direct to consumer and retail sales pose
+                            challenges for
+                            production
+                            and business models designed to move product at maximum volume.</li>
+                        <li>The seafood sector is especially enmeshed with restaurant sales.
+                            Challenges
+                            integrating into
+                            emergency food operations, the loss of restaurant sales, lower prices
+                            for
+                            seafood, and
+                            disruptions
+                            of markets caused revenue to decline in the fishing industry.</li>
+                    </ul>
+                    <p>Resilience in Action:</p>
+                    <ul>
+                        <li><a
+                                href="https://lfscovid.localfoodeconomics.com/impact_assessments/local-catch-network-lcn-may-2021/">The
+                                Local Catch Network Impact Assessment</a>: Within the seafood
+                            sector,
+                            fishermen had to
+                            completely rethink how they conducted business due to a loss of markets.
+                            With restaurants
+                            closed,
+                            many fishermen started selling their seafood directly to customers
+                            off-the-boat and
+                            on-the-dock and
+                            there was a boom in online sales for direct seafood marketing. The Local
+                            Catch Network
+                            connected
+                            fishermen involved in local and direct seafood marketing with local and
+                            regional consumers.
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class='modal' id="modal-direct">
             <span class="close">&times;</span>
-            <h2>direct</h2>
-        </div>
-        <div class='modal' id="modal-community">
-            <span class="close">&times;</span>
-            <h2>community</h2>
-        </div>
-    </div>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="app.js" async defer></script>
+            <h2>Direct to Consumer</h2>
+            <div class="modal-columns-container">
+                <div class="equitable">
+                    <h3>Equitable Response and Recovery</h3>
+                    <p>Impacts and Response in LRFS:</p>
+                    <ul>
+                        <li>Diversified direct to consumer operations with undesignated produce
+                            and/or livestock growing
+                            in the
+                            fields face distinct challenges in pivoting their business to ensure
+                            their product finds a
+                            market
+                            when their normal markets are shut down or unreachable.</li>
+                        <li>Geographically remote (e.g., rural, island, and other remote
+                            communities) LRFS producers are
+                            especially vulnerable to market disruption due to limited access to
+                            alternative markets.
+                        </li>
+                    </ul>
+                    <p>Resilience in Action:</p>
+                    <ul>
+                        <li><a
+                                href="https://lfscovid.localfoodeconomics.com/resources/thinking-inside-the-box-making-healthy-food-accessible-with-curbside-drive-thru-contactless-models-at-farmers-markets-during-covid-19/"><em>Thinking
+                                    Inside the Box</em> Innovation Brief</a>: Farmers markets
+                            and CSAs pivoted to food
+                            box
+                            programs and curbside and drive-thru models to continue market
+                            access while also continuing
+                            SNAP/EBT
+                            payment and nutrition incentive program access.</li>
+                        <li><a
+                                href="https://lfscovid.localfoodeconomics.com/resources/what-is-a-sliding-scale-you-ask/">What
+                                is
+                                a Sliding Scale You Ask?</a>, developed by Underground Alchemy:
+                            This resource explains
+                            how
+                            sliding-scale CSAs are tools for building economic justice while
+                            simultaneously ensuring
+                            fair
+                            compensation to producers.</li>
+                    </ul>
+                </div>
+                <div class="securing">
+                    <h3>Securing Supply Chains </h3>
+                    <p>Impacts and Response in LRFS:</p>
+                    <ul>
+                        <li>Long standing and well-known market infrastructure and locations
+                            (e.g., farmers market
+                            pavilions,
+                            roadside stands) are displaced or shut down due to evacuations
+                            and/or public health
+                            restrictions.
+                        </li>
+                    </ul>
+                    <p>Resilience in Action:</p>
+                    <ul>
+                        <li><a
+                                href="https://lfscovid.localfoodeconomics.com/wp-content/uploads/2021/04/Alternative-Market-Models-IB-updated.pdf"><em>Alternative
+                                    Farmers Market Models</em> Innovation Brief</a>: By
+                            leveraging social media as a key
+                            communication platform and partnering with municipal and NGO
+                            partners, farmers markets and
+                            other
+                            direct to consumer outlets rapidly established alternative market
+                            locations and
+                            drive-through
+                            models.</li>
+                    </ul>
+                </div>
+                <div class="maintaining">
+                    <h3>Maintaining Markets </h3>
+                    <p>Impacts and Response in LRFS:</p>
+                    <ul>
+                        <li>Shelter in place protocols coupled with supply chain disruptions for
+                            conventional food
+                            sources
+                            spurred a boom in demand for mail order, door to door delivery, and
+                            other delivery-based
+                            direct
+                            market outlets.</li>
+                        <li>Uncertainty regarding the viability or longevity of novel market
+                            channels can leave farm and
+                            food
+                            businesses in limbo regarding future business plans.</li>
+                    </ul>
+                    <p>Resilience in Action:</p>
+                    <ul>
+                        <li><a href="https://www.csacoalition.org/partner-shares">Partner
+                                Shares</a> from the FairShare
+                            CSA
+                            Coalition used CARES Act funding to expand existing food assistance
+                            programs and more than
+                            doubled
+                            their assistance for low-cost CSA boxes for families across the
+                            Midwest.</li>
+                        <li><a
+                                href="https://docs.google.com/document/d/1WTnUA4vtvj_HBedC56kfaP7JeijpDLp9-XQ3mR2KUT0/edit">Farmer
+                                to Farmer Exchange, ECommerce Platforms, CSA Innovation
+                                Network</a>: Provides ratings
+                            and
+                            detailed insight from producers on the quality, efficacy, and ease
+                            of use of on-line sales
+                            platforms. The report is intended to support producers in decision
+                            making as they had to
+                            quickly
+                            adapt to online sale systems, contactless payments, and contactless
+                            deliveries.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class='modal' id="modal-community">
+                <span class="close">&times;</span>
+                <h2>Community, Faith-Based, and NGOs</h2>
+                <div class="modal-columns-container">
+                    <div class="modal-equitable">
+                        <h3>Equitable Response and Recovery</h3>
+                        <p>Impacts and Response in LRFS:</p>
+                        <ul>
+                            <li>Disruptions and natural disaster often throw people into
+                                food insecurity for the first time.
+                                These
+                                individuals and families are unfamiliar with how to access
+                                and navigate food security
+                                resources.
+                            </li>
+                            <li>Food banks and other food access programs must adapt and
+                                accommodate the influx of new
+                                people using
+                                their programs and conduct additional outreach to help reach
+                                everyone in need.</li>
+                        </ul>
+                        <p>Resilience in Action:</p>
+                        <ul>
+                            <li><a
+                                    href="https://lfscovid.localfoodeconomics.com/wp-content/uploads/2021/02/December-WEbinar-Summary.pdf">Emergency
+                                    Food, Charity, and the Local Food System Webinar
+                                    Highlights</a>: Amid crisis, community
+                                organizations established community feeding programs to help
+                                meet immediate need. Two
+                                examples are
+                                Spirit Lake Tribe's Food Distribution Program that operated
+                                a grocery store style food bank
+                                and
+                                placed a large emphasis on culturally appropriate foods and
+                                Nourish Lexington which pivoted
+                                to
+                                prepare and distribute fresh, nutritious meals to anyone in
+                                need as emergency feeding became
+                                a vital
+                                aspect of pandemic response.</li>
+                        </ul>
+                        <h3>Securing Supply Chains </h3>
+                        <p>Impacts and Response in LRFS:</p>
+                        <ul>
+                            <li>Supply chain shortages and sharp upticks in demand from
+                                newly food insecure community
+                                members can
+                                overwhelm emergency food systems.</li>
+                            <li>The COVID-19 pandemic created health and safety concerns
+                                around standard food distribution
+                                and
+                                delivery models.</li>
+                            <li>Evacuations resulting from natural disasters create mobile
+                                populations with limited access
+                                to
+                                kitchen facilities, cold storage, or familiar places for
+                                food procurement.</li>
+                        </ul>
+                        <p>Resilience in Action:</p>
+                        <ul>
+                            <li><a
+                                    href="https://lfscovid.localfoodeconomics.com/wp-content/uploads/2023/01/Puerto-Rico-Supply-Chains.pdf">Building
+                                    a Decentralized Food Supply Chain in Puerto Rico</a>:
+                                Communities leveraged LRFS'
+                                inherent
+                                strengths of diversified and dispersed food production and
+                                distribution systems to establish
+                                partnerships between community-based organizations and
+                                emergency/charitable feeding
+                                operations.</li>
+                        </ul>
+                        <h3>Maintaining Markets </h3>
+                        <p>Impacts and Response in LRFS:</p>
+                        <ul>
+                            <li>Community and faith-based food systems initiatives are
+                                uniquely positioned to identify,
+                                understand,
+                                and respond to the needs of historically underserved and
+                                vulnerable communities.</li>
+                            <li>Drawing on longstanding traditions of mutual-aid and
+                                cooperation, these groups can mobilize
+                                quickly
+                                to connect their communities with emergency feeding
+                                programs.</li>
+                            <li>Cooperative economic models deployed by community groups
+                                support underserved food producers
+                                in times
+                                of disruption and beyond.</li>
+                        </ul>
+                        <p>Resilience in Action:</p>
+                        <ul>
+                            <li>The Black Church Food Security Network's <a
+                                    href="https://blackchurchfoodsecurity.net/soil-to-sanctuary-market-2/">Soil
+                                    to Sanctuary
+                                    Market
+                                    program</a> is an example of how communities with
+                                existing connections to local farms
+                                and food
+                                producers used those relationships to bring locally produced
+                                foods into the overtaxed
+                                emergency food
+                                system. This ensured that healthy and culturally relevant
+                                foods were available to neighbors
+                                in need.
+                            </li>
+                        </ul>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+                <script src="https://d3js.org/d3.v7.min.js"></script>
+                <script src="app.js" async defer></script>
 </body>
 
 </html>
