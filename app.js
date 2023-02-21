@@ -43,16 +43,41 @@ modalClose.on('click', function () {
 //   console.log('jonquil');
 // }
 
-const dispatch = d3.dispatch('retailRestaurants');
-dispatch.on('retailRestaurants', retailRestaurantsBox);
+// const dispatchRetail = d3.dispatch('retailRestaurants');
+// dispatchRetail.on('retailRestaurants', retailRestaurantsBox);
 
-const retailRestaurants = d3.select('#retail-restaurants');
-const retailModal = d3.select('#modal-retail');
-retailRestaurants.on('click', function () {
-  dispatch.call('retailRestaurants');
-  retailModal.style('display', 'block');
+// const retailRestaurants = d3.select('#retail-restaurants');
+// const retailModal = d3.select('#modal-retail');
+// retailRestaurants.on('click', function () {
+//   console.log('hello');
+//   dispatch.call('retailRestaurants');
+//   retailModal.style('display', 'block');
+// });
+
+// function retailRestaurantsBox() {
+//   console.log('retail restaurants');
+// }
+
+d3.select('#retail').on('click', function () {
+  d3.select('#modal-retail').style('display', 'block');
 });
 
-function retailRestaurantsBox() {
-  console.log('retail restaurants');
-}
+d3.select('#institutions').on('click', function () {
+  d3.select('#modal-institutions').style('display', 'block');
+});
+
+d3.select('#government').on('click', function () {
+  d3.select('#modal-government').style('display', 'block');
+});
+
+d3.select('#non-commodity').on('click', function () {
+  d3.select('#modal-non-commodity').style('display', 'block');
+});
+
+d3.select('#direct').on('click', function () {
+  d3.select('#modal-direct').style('display', 'block');
+});
+
+d3.select('#community').on('click', function () {
+  d3.select('#modal-community').style('display', 'block');
+});
