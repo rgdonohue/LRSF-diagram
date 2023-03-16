@@ -1,4 +1,4 @@
-const modalClose = d3.selectAll('.modal .close');
+const modalClose = d3.selectAll('.close-button');
 const modals = d3.selectAll('.modal');
 modalClose.on('click', function () {
   modals.style('display', 'none');
